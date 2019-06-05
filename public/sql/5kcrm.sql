@@ -1254,7 +1254,7 @@ INSERT INTO `5kcrm_admin_rule` VALUES ('82', '2', '导出', 'excelExport', '3', 
 INSERT INTO `5kcrm_admin_rule` VALUES ('83', '2', '导入', 'excelImport', '3', '56', '1');
 INSERT INTO `5kcrm_admin_rule` VALUES ('84', '2', '导出', 'excelExport', '3', '56', '1');
 
-ALTER TABLE `5kcrm_oa_announcement` ADD `read_user_ids` TEXT  COMMENT '阅读人' AFTER `owner_user_ids`;
+ALTER TABLE `5kcrm_oa_announcement` ADD `read_user_ids` TEXT COMMENT '阅读人' AFTER `owner_user_ids`;
 
 CREATE TABLE `5kcrm_crm_top` (
   `top_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -1265,3 +1265,17 @@ CREATE TABLE `5kcrm_crm_top` (
   `module` varchar(50) NOT NULL DEFAULT 'business' COMMENT '置顶模块',
   PRIMARY KEY (`top_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='置顶表';
+
+INSERT INTO `5kcrm_crm_config` (`id`, `name`, `value`, `description`) VALUES
+(NULL, 'record_type', '[\"\\u6253\\u7535\\u8bdd\",\"\\u53d1\\u90ae\\u4ef6\",\"\\u53d1\\u77ed\\u4fe1\",\"\\u89c1\\u9762\\u62dc\\u8bbf\",\"\\u6d3b\\u52a8\"]', '跟进记录类型');
+
+INSERT INTO `5kcrm_crm_config` (`id`, `name`, `value`, `description`) VALUES (NULL, 'contract_config', '1', '1开启');
+
+INSERT INTO `5kcrm_admin_rule` VALUES ('85', '2', '导出', 'poolExcelExport', '3', '29', '1');
+
+CREATE TABLE `5kcrm_crm_contacts_business` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `contacts_id` int(10) NOT NULL,
+  `business_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
