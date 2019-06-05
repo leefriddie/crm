@@ -14,7 +14,7 @@
 
 QQ群交流群⑩群：[486745026](https:////shang.qq.com/wpa/qunwpa?idkey=f4687b809bf63f08f707aa1c56dee8dbcb9526237c429c4532222021d65bf83c)
 
-JAVA版下载地址：[https://gitee.com/wukongcrm/72crm-java](http://https://gitee.com/wukongcrm/72crm-java)
+JAVA版下载地址：[https://gitee.com/wukongcrm/72crm-java](https://gitee.com/wukongcrm/72crm-java)
 
 
 微信交流群：
