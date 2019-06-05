@@ -19,7 +19,7 @@ JAVA版下载地址：[https://gitee.com/wukongcrm/72crm-java](http://https://gi
 
 微信交流群：
 
-<img src="https://images.gitee.com/uploads/images/2019/0520/132417_54cec8b3_345098.png" width="400">
+<img src="https://images.gitee.com/uploads/images/2019/0605/212203_a889f9e5_345098.png" width="400">
 
 
 
